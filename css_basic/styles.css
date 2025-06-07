@@ -1,3 +1,19 @@
+/*============ COLORS =========*/
+body {
+    background-color: #ebfaf5;
+    color: #a43f9a;
+}
+
+aside {
+    border:2px solid #a43f9a;
+}
+
+.logo {
+    color: #97d5d0;
+}
+
+/*============ OTHER =========*/
+
 body{
     display: flex;
     flex-direction: column;
