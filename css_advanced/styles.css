@@ -10,23 +10,115 @@ body{
     display: flex;
     flex-direction: column;
     /*align-items: center;*/
-    background-color: rgb(190, 190, 190);
-    width: 80%;
-    margin: 2rem auto;
+    /* background-color: rgb(190, 190, 190); */
+    /*width: 80%;*/
+    /* margin: 2rem auto; */
 }
 
-main {
-    display: flex;
+section{
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+/* h1, h2, h3, p {
+    margin-top: 2rem;
+    padding: 0;
+} */
+
+.section-heading{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.width-80{
+    width: 80%;
+}
+
+.centered-column{
+    display:flex;
     flex-direction: column;
-    /*align-items: center;*/
+    align-items: center;
+} 
+
+.centered-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.large-padding{
+    padding-top: 6rem;
 }
 
 header{
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+    background-image: url(assets/images/Object.png);
+    background-size:cover;
+    background-position:top;
+    /* height: 130vh; */
+    justify-content: space-between;
+    
+} 
+
+#learn-from-pros{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-main section{
+
+/* ============= LEARN FROM PROS DIV =============== */
+
+#pros-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    height:30vh;
+}
+
+#pros-div>div{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 20px);
+}
+
+#pros-div>div h3{
+    text-align: center;
+    
+}
+
+#pros-div>div p{
+    text-align: center;
+    
+}
+
+
+#pros-div img{
+    width: 6rem;
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+/* } */ 
+
+
+
+/* main section{
     display:flex;
     flex-direction: column;
     
@@ -36,7 +128,7 @@ main section{
     display: flex;
     flex-direction: row;
     width: 100%;
-}
+} */
 
 
 /* ===============NAVIGATION=============== */
@@ -45,9 +137,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-top:1rem;
 }
 
-#logo {
+.logo {
     height: auto;
     max-height: 20px; 
     width: auto;
@@ -58,26 +151,185 @@ nav ul{
     flex-direction: row;
     list-style: none;
     gap: 1rem;
+} 
+
+nav ul li a {
+    text-decoration: none;
 }
 
 /* ===============HERO=============== */
 
 .hero-section {
-    background-color: rgb(64, 64, 186);
+    /* background-color: rgb(64, 64, 186); */
+    /* height:100vh; */
 }
 
-.centered-column{
+.landing-section{
+    height:90vh;
+    justify-content: center;
+}
+.landing-section>div{
+    display:flex;
+    gap: 40px;
+}
+
+button{
+    margin-top:2rem;
+    border:none;
+    background-color:#C271FF;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+    
+}
+/* ===============TESTIMONIALS=============== */
+
+#testimonials {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 250px;
+    background-color: #C271FF;
+}
+.testimonials-container{
+    display:flex; 
+    /* flex-direction: column; */
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    height:100%;
+}
+
+.testimonial-image {
+    flex:1;
+}
+
+.testimonial-text{
+    flex:3;
+}
+
+#testimonials img {
+    height: 6rem;
+}
+
+/* ===============TUTORIALS=============== */
+
+.tutorial-section{
+        color:#071629;
+}
+
+.tutorial-articles{
+    /* display:flex;
+    flex-direction: column; */
+    width:80%;
+    height: 400px;
+
+
+}
+
+.tutorial-article{
+    flex:1;
+}
+
+.tutorial-image{
+    width:200px;
+    height:120px;
+}
+
+/* ===============MEMBERSHIP=============== */
+.membership-section{
+    background-color:#071629;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+}
+
+.membership-details{
+    width:80%;
+    height: 200px;
+}
+
+.membership-details > *{
+    flex:1;
+}
+
+.membership-details > div{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.membership-details > div > *{
+    padding-top:1rem;
+}
+.membership-details img{
+    width:40px;
+}
+
+/* ===============FAQs=============== */
+.faq-section{
+    justify-content: center;
+    color:#071629;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.faq-row{
+    width:80%;
+    padding-bottom: 1rem;
+}
+
+.faq-row > * {
+    flex:1;
+}
+
+/* ===============FOOTER=============== */
+footer{
+    background-color: #071629;
+    padding-top:2em;
+}
+
+.footer-section{
+    width:80%;
 }
 
 /* ===============FONTS=============== */
 body {
   font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
+    color:white;
+}
+
+.section-heading{
+    font-weight: 300;
+}
+
+.section-heading span {
+    font-weight: 600;
+    color:#C271FF;
 }
 
 .hero-section h1{
-    font-size: 3rem;
+    /* margin-top: 6rem; */
+    font-size: 6em;
 }
+
+nav ul li a {
+    font-size:12px;
+    font-weight:600;
+    color:white;
+
+}
+
+.landing-section>div{
+    font-size: 14px;
+    font-weight:600;
+}
+
+button{
+    font-size:14px;
+    font-weight: 600;
+    color:white;
+}
+
