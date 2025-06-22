@@ -68,7 +68,6 @@ a:hover, a:active{
 
 /* ========== SECTION STYLES ========== */
 
-
 .section-padding{
     /* set top and bottom padding to a fixed amount and the left and right padding as a % of screen width */
     padding: 4rem 15%;
@@ -183,4 +182,20 @@ nav li{
 
 .pentagon p {
     font-size: 12px;
+}
+
+/* ========== CONTACT US ========== */
+
+
+input {
+    font-weight: bold;
+    border: none;
+    outline: 0;
+    border-color:grey;
+    border-width: 0 0 2px 0;
+    padding: 10px;
+}
+
+form button{
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
